@@ -1,44 +1,44 @@
 ---
 name: hatch-project-context
-description: Read and reconcile Hatch's internal Feishu knowledge base, public One Pager, and market-entry analysis. Use when Codex needs Hatch-specific context for product positioning, architecture, creator or customer workflows, market strategy, onboarding, internal collaboration, briefs, presentations, comparisons, or answers about what Hatch is and how it works. Do not use for generic repository work that does not depend on Hatch business or product context.
+description: 读取并协调 Hatch 的内部飞书知识库、公开 One Pager 与市场进入分析。当 Codex 需要 Hatch 专属上下文来处理产品定位、技术架构、Creator 或 Customer 工作流、市场策略、新人培训、内部协作、简报、演示文稿、资料对比，或回答 Hatch 是什么、如何运作等问题时使用。不要用于不依赖 Hatch 业务或产品上下文的通用代码仓库任务。
 ---
 
-# Hatch Project Context
+# Hatch 项目上下文
 
-Use the live Hatch sources instead of relying on remembered project context. Read only the sources needed for the request.
+使用 Hatch 的实时数据源，不要依赖记忆中的项目上下文。只读取当前任务需要的资料。
 
-## Workflow
+## 工作流程
 
-1. Read [references/sources.md](references/sources.md) and select the relevant sources.
-2. Retrieve current source content at task time. Do not treat copied excerpts or prior chat summaries as current authority.
-3. Distinguish source roles:
-   - Use Feishu for internal decisions, architecture, operating context, guides, and meeting history.
-   - Use the One Pager for approved external positioning, business-model language, and partner messaging.
-   - Use Market Analysis for market-entry hypotheses, vertical selection, and GTM framing.
-4. Resolve conflicts by task intent, source role, and date. State material conflicts instead of silently blending them.
-5. Produce the requested answer or artifact with links to the sources used. Label meeting notes and market claims according to their evidence level.
+1. 阅读 [references/sources.md](references/sources.md)，选择与任务相关的数据源。
+2. 在执行任务时读取数据源的最新内容。不要把复制的片段或先前聊天摘要当作当前权威信息。
+3. 区分不同数据源的职责：
+   - 使用飞书获取内部决策、技术架构、运营背景、使用指南和会议历史。
+   - 使用 One Pager 获取已批准的对外定位、商业模式表述和合作伙伴沟通语言。
+   - 使用 Market Analysis 获取市场进入假设、赛道选择和 GTM 框架。
+4. 根据任务目的、数据源职责和日期处理冲突。明确指出重要冲突，不要静默合并不同结论。
+5. 根据用户要求生成回答或交付物，并链接实际使用的数据源。说明会议纪要和市场结论的证据等级。
 
-## Source authority
+## 数据源权威性
 
-- For internal product intent, prefer the relevant Feishu canonical document over meeting notes.
-- For external-facing language, prefer the current One Pager. Do not expose internal wording unless the user explicitly requests it and sharing is appropriate.
-- For market selection, use Market Analysis as a working thesis, not as verified fact. Verify claims that require current or precise external evidence against primary sources.
-- For current implementation, release, authentication, payment, entitlement, or runtime behavior, inspect the real product path. These content sources are not UAT or release evidence.
-- When two sources disagree, report both positions with their source and date, then identify which one governs the requested task.
+- 回答内部产品意图时，优先使用相关飞书正式文档，其次才是会议纪要。
+- 编写对外材料时，优先使用当前 One Pager。除非用户明确要求且适合共享，否则不要暴露内部措辞。
+- 选择市场或赛道时，把 Market Analysis 视为工作假设，而不是已验证事实。涉及实时、精确或高风险的外部结论时，使用一手来源重新验证。
+- 判断当前实现、发布、authentication、payment、entitlement 或 Runtime 行为时，检查真实产品链路。内容资料不能作为 UAT 或发布证据。
+- 当两个数据源冲突时，分别说明结论、来源和日期，再指出当前任务应以哪个来源为准。
 
-## Handling Feishu material
+## 处理飞书资料
 
-- Use authenticated `lark-cli` access described in the source reference.
-- Read only. Do not move, edit, share, or change permissions unless the user explicitly asks.
-- Prefer canonical product pages over AI-generated meeting summaries.
-- Treat smart minutes as potentially inaccurate. Confirm consequential claims against the original transcript or a canonical document.
-- Do not broadly reproduce private, personal, health, financing, credential, or access-control information.
-- If authentication or a live dependency is unavailable, report the blocker. Never substitute mock data or claim the source was checked.
+- 使用数据源说明中的已认证 `lark-cli` 访问飞书。
+- 默认只读。除非用户明确要求，否则不要移动、编辑、分享文档或修改权限。
+- 优先使用正式产品文档，不要优先依赖 AI 生成的智能纪要。
+- 把智能纪要视为可能不准确的材料。重要结论需要用原始文字记录或正式文档确认。
+- 不要大范围复制私人、健康、融资、凭据、权限控制或其他敏感信息。
+- 如果认证或实时依赖不可用，明确报告阻碍。不要用 mock 数据替代，也不要声称已经检查数据源。
 
-## Typical outputs
+## 常见任务
 
-- Explain Hatch positioning, architecture, creator flow, customer flow, or business model.
-- Prepare internal onboarding, product briefs, market plans, partner materials, or meeting preparation.
-- Compare internal strategy with external messaging.
-- Trace when and where a Hatch decision was made.
-- Identify stale, conflicting, sensitive, or unverified project claims.
+- 解释 Hatch 的产品定位、技术架构、Creator 流程、Customer 流程或商业模式。
+- 准备内部新人培训、产品简报、市场计划、合作伙伴材料或会议资料。
+- 对比内部策略与对外表述。
+- 追溯某项 Hatch 决策在何时、何处形成。
+- 识别过时、冲突、敏感或尚未验证的项目结论。
