@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hatch 项目上下文"
+  short_description: "读取 Hatch 内部知识库、One Pager 与市场分析资料"
+  default_prompt: "使用 $hatch-project-context 基于最新 Hatch 项目资料回答产品与市场问题。"
