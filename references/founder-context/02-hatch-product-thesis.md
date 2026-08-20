@@ -4,7 +4,6 @@ source_kind: codex_session
 source_ref: thread://019fa3c2-95cb-71c0-a8a0-4bd72601c854
 provenance: observed
 selection_reason: 多次出现且相互一致的产品定义、价值承诺与边界
-creator_approved: false
 ---
 
 # Hatch 的产品命题
@@ -46,4 +45,3 @@ Hatch 的产品承诺是完成一项边界清楚的工作，并交付可用成�
 - Codex task `019fa3c2-95cb-71c0-a8a0-4bd72601c854`
 - Codex task `019fa35d-c9ba-79c0-b980-c46360abfe09`
 - 关键时间：2026-07-27T11:37:54Z、2026-07-27T13:27:46Z
-

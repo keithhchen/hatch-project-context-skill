@@ -4,7 +4,6 @@ source_kind: codex_session
 source_ref: thread://019fa35d-c9ba-79c0-b980-c46360abfe09
 provenance: observed
 selection_reason: 反复确认的品牌主次、用户入口和分发原则
-creator_approved: false
 ---
 
 # Creator-first 的品牌与分发
@@ -48,4 +47,3 @@ Hatch 的获客和分发应借助 Creator 已经建立的信任与受众，而�
 - Codex task `019fa35d-c9ba-79c0-b980-c46360abfe09`
 - Codex task `019fa3c2-95cb-71c0-a8a0-4bd72601c854`
 - 关键时间：2026-07-27T12:48:40Z、2026-07-27T13:00:22Z、2026-07-27T13:27:46Z
-

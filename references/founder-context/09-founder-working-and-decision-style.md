@@ -4,7 +4,6 @@ source_kind: codex_session
 source_ref: thread://019fa35d-c9ba-79c0-b980-c46360abfe09
 provenance: observed
 selection_reason: 在产品、架构、写作和验收任务中反复出现的稳定工作原则
-creator_approved: false
 ---
 
 # Keith 的工作与决策方式
@@ -52,4 +51,3 @@ Codex 历史中存在少量调试现场的临时指令、情绪化短句和放�
 - Codex task `019f4fb4-fed9-7363-922e-6b6756231ff1`
 - Codex task `019fc334-1e3c-7cc1-be88-ce9c2db1b728`
 - 当前 Hatch `AGENTS.md` development rules
-

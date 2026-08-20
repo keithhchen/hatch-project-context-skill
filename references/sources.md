@@ -7,7 +7,7 @@
 | 飞书知识库 | 内部产品定义、技术架构、市场资料、使用指南和历史决策 | 当前实现或发布状态的证据 |
 | One Pager | 已批准的对外定位、Creator/Customer 价值、商业模式和合作伙伴沟通 | 内部实现规范 |
 | Market Analysis | 赛道评分、北美与日本市场进入假设和 GTM 框架 | 已独立验证的市场事实 |
-| Founder Context | Keith 的经历、产品判断、质量标准、架构原则和工作方式 | 自动获得对外发布批准的本人声明 |
+| Founder Context | Keith 的经历、产品判断、质量标准、架构原则和工作方式 | 当前实现、实时决策或对外定稿 |
 
 ## 飞书知识库
 
@@ -52,9 +52,9 @@ LARK_CLI_NO_PROXY=1 /Users/keithchen/.nvm/versions/node/v22.22.0/bin/lark-cli do
 
 读取 `data.document.content`。需要记录来源时，保留标题、URL、revision 和日期。不要暴露本地飞书凭据或配置。
 
-## Keith Founder Context
+## Founder Context
 
-这些文件来自已筛选的 Codex 工作记录，保留原始 frontmatter。按问题主题只读取相关文件：
+这是与飞书知识库、One Pager 和 Market Analysis 并列的一个数据源，位于 `references/founder-context/`，内部包含 9 个按主题拆分的文件。下面的文件只用于该数据源内部按需读取，不是 9 个独立数据源：
 
 | 主题 | 文件 | 使用范围 |
 |---|---|---|
@@ -67,9 +67,8 @@ LARK_CLI_NO_PROXY=1 /Users/keithchen/.nvm/versions/node/v22.22.0/bin/lark-cli do
 | Product authority 与版本 | [07-product-authority-and-version-model.md](founder-context/07-product-authority-and-version-model.md) | Product-only authority、Snapshot、事件图和迁移原则 |
 | Agent Runtime | [08-agent-runtime-philosophy.md](founder-context/08-agent-runtime-philosophy.md) | 协议、Server/Desktop 边界、Runtime 和方法保护 |
 | 工作与决策方式 | [09-founder-working-and-decision-style.md](founder-context/09-founder-working-and-decision-style.md) | 表达、判断、产品决策、工程与验收原则 |
-| 尚未确定的 GTM | [10-gtm-decisions-still-open.md](founder-context/10-gtm-decisions-still-open.md) | 仅识别冲突和待确认问题；不能作为既定策略 |
 
-所有文件当前均标记 `creator_approved: false`。用户要求导入这些资料，不等于批准其中每句话成为公开声明；生成对外内容时仍需遵守各文件的表达边界。第 10 个文件的 `provenance` 为 `inferred`，必须保持为未决事项。
+读取 Founder Context 时，根据当前问题选择相关内部文件，并保留其中记录的 `provenance`、来源和日期。
 
 ## One Pager
 
@@ -104,4 +103,3 @@ curl -L --max-time 20 -sS 'https://hatch-market-entry.keithchen.chatgpt.site/'
 - 如果飞书记录的是内部实验，而 One Pager 已形成确定的对外定位，对外文案使用 One Pager；只在内部任务中说明尚未解决的不确定性。
 - 如果智能纪要声称某项功能已可用，但任务要求判断当前产品行为，检查真实产品链路，并把会议中的说法标记为未验证。
 - 如果 Market Analysis 与 Hatch Verticals 对某个赛道的排名不同，保留双方依据，并在提出建议前说明日期和评价标准。
-- 如果 Founder Context 与更新后的飞书正式文档冲突，内部产品事实以更新后的正式文档为准；如任务询问 Keith 的历史判断，同时保留 Founder Context 的来源日期与 provenance。

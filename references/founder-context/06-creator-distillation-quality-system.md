@@ -4,7 +4,6 @@ source_kind: codex_session
 source_ref: thread://019ff138-fb97-7830-9c5e-04c01d2a424c
 provenance: observed
 selection_reason: 对 Creator 蒸馏输入、监督角色、Eval、失败回流和发布门槛的连续讨论
-creator_approved: false
 ---
 
 # Creator 蒸馏与质量系统
@@ -64,4 +63,3 @@ Eval 评估的是 Agent 生成的结果，而不只是让 Creator 回答一组 Q
 - Codex task `019ff138-fb97-7830-9c5e-04c01d2a424c`
 - Codex task `019fea3c-eca5-71b3-990d-7127f6c21fda`
 - 关键时间：2026-08-11T14:30:26Z 至 2026-08-11T15:05:46Z
-

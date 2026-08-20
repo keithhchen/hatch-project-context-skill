@@ -24,17 +24,9 @@ description: 读取并协调 Hatch 的内部飞书知识库、公开 One Pager�
 - 回答内部产品意图时，优先使用相关飞书正式文档，其次才是会议纪要。
 - 编写对外材料时，优先使用当前 One Pager。除非用户明确要求且适合共享，否则不要暴露内部措辞。
 - 选择市场或赛道时，把 Market Analysis 视为工作假设，而不是已验证事实。涉及实时、精确或高风险的外部结论时，使用一手来源重新验证。
-- 解释 Keith 的判断时，按主题只读取相关 Founder Context 文件，并保留文件中的 `provenance` 与 `creator_approved` 状态。`creator_approved: false` 的内容不能自动作为 Keith 已批准的对外表述。
+- 回答 Keith 的创始人判断时，使用 Founder Context，并像处理其他数据源一样根据主题、日期和 `provenance` 判断适用性。
 - 判断当前实现、发布、authentication、payment、entitlement 或 Runtime 行为时，检查真实产品链路。内容资料不能作为 UAT 或发布证据。
 - 当两个数据源冲突时，分别说明结论、来源和日期，再指出当前任务应以哪个来源为准。
-
-## 处理 Founder Context
-
-- 使用 [references/sources.md](references/sources.md) 中的主题索引，只读取解决当前问题所需的文件，不要默认加载全部资料。
-- 把 `observed` 视为从历史工作记录中观察并整理的表述，不要将其升级为独立验证事实。
-- 把 `inferred` 视为推断或建议，必须明确标注，不能写成 Keith 或 Hatch 的既定立场。
-- `10-gtm-decisions-still-open.md` 只用于识别未决问题。不得用它宣布首发地域、第一 ICP、第一 SKU 或定价已经确定。
-- 不要以 Keith 的名义对外发言或假装本人。可以基于资料总结其已记录的判断，并说明来源边界。
 
 ## 处理飞书资料
 

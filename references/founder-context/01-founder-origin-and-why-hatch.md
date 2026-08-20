@@ -4,7 +4,6 @@ source_kind: codex_session
 source_ref: thread://019fa3c2-95cb-71c0-a8a0-4bd72601c854
 provenance: observed
 selection_reason: 创始人亲自陈述的经历，以及这些经历如何形成 Hatch 的核心判断
-creator_approved: false
 ---
 
 # Keith 的经历与 Hatch 的来源
@@ -34,4 +33,3 @@ Hatch 不是替专家“复制一个数字分身”，而是帮助专家把具�
 
 - Codex task `019fa3c2-95cb-71c0-a8a0-4bd72601c854`
 - 关键时间：2026-07-28T11:23:14Z、2026-07-28T13:56:08Z
-

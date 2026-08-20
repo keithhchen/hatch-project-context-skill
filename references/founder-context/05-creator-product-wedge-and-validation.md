@@ -4,7 +4,6 @@ source_kind: codex_session
 source_ref: thread://019fa3c2-95cb-71c0-a8a0-4bd72601c854
 provenance: observed
 selection_reason: 定义了 Hatch 相对课程、咨询和 Skill 文件的产品位置，以及早期真正的验证信号
-creator_approved: false
 ---
 
 # Hatch 的产品楔子与验证标准
@@ -56,4 +55,3 @@ Hatch 不应只逐个寻找 Creator，也应寻找已经与一批成熟 Creator 
 
 - Codex task `019fa3c2-95cb-71c0-a8a0-4bd72601c854`
 - 关键时间：2026-07-27T13:27:46Z 至 2026-07-27T13:27:47Z
-

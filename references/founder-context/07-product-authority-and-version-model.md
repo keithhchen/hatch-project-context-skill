@@ -4,7 +4,6 @@ source_kind: codex_session
 source_ref: thread://01a009a1-d72c-7be1-8e36-2f7ca4b47a8a
 provenance: observed
 selection_reason: Keith 明确纠正旧模型并确认 Product-only source of truth
-creator_approved: false
 ---
 
 # Hatch 的 Product authority 与版本模型
@@ -58,4 +57,3 @@ immutable artifacts
 - Codex task `01a009a1-d72c-7be1-8e36-2f7ca4b47a8a`
 - Codex task `019fff45-1450-7d00-be58-ace148ea9341`
 - 关键时间：2026-08-14T14:40:56Z、2026-08-14T15:29:11Z、2026-08-16T09:27:42Z、2026-08-16T09:53:54Z
-

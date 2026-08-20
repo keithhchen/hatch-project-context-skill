@@ -4,7 +4,6 @@ source_kind: codex_session
 source_ref: thread://019f0294-b6b0-7a61-9e7c-6f8ea9a251c9
 provenance: observed
 selection_reason: 跨多次技术讨论保持稳定的协议、云端与本地边界及安全原则
-creator_approved: false
 ---
 
 # Hatch 的 Agent Runtime 哲学
@@ -67,4 +66,3 @@ Server 不应根据用户电脑上的绝对路径直接读取文件。本地 run
 - Codex task `019fe5d0-e7b7-7971-a4ac-a5c233a748b0`
 - Codex task `019fd52e-ec4c-73b2-be36-51b6f285dc05`
 - 关键时间：2026-06-26 至 2026-08-10
-
