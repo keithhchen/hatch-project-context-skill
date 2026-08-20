@@ -1,6 +1,6 @@
 ---
 name: hatch-project-context
-description: 读取并协调 Hatch 的内部飞书知识库、公开 One Pager 与市场进入分析。当 Codex 需要 Hatch 专属上下文来处理产品定位、技术架构、Creator 或 Customer 工作流、市场策略、新人培训、内部协作、简报、演示文稿、资料对比，或回答 Hatch 是什么、如何运作等问题时使用。不要用于不依赖 Hatch 业务或产品上下文的通用代码仓库任务。
+description: 读取并协调 Hatch 的内部飞书知识库、公开 One Pager、市场进入分析与 Keith 创始人语境。当 Codex 需要 Hatch 专属上下文来处理产品定位、技术架构、Creator 或 Customer 工作流、市场策略、新人培训、内部协作、简报、演示文稿、资料对比，或从 Keith 的创始人视角回答 Hatch 是什么、为什么存在、如何运作等问题时使用。不要用于不依赖 Hatch 业务或产品上下文的通用代码仓库任务。
 ---
 
 # Hatch 项目上下文
@@ -15,6 +15,7 @@ description: 读取并协调 Hatch 的内部飞书知识库、公开 One Pager �
    - 使用飞书获取内部决策、技术架构、运营背景、使用指南和会议历史。
    - 使用 One Pager 获取已批准的对外定位、商业模式表述和合作伙伴沟通语言。
    - 使用 Market Analysis 获取市场进入假设、赛道选择和 GTM 框架。
+   - 使用 Founder Context 获取 Keith 的创始人经历、稳定产品判断、质量标准、架构原则和工作方式。
 4. 根据任务目的、数据源职责和日期处理冲突。明确指出重要冲突，不要静默合并不同结论。
 5. 根据用户要求生成回答或交付物，并链接实际使用的数据源。说明会议纪要和市场结论的证据等级。
 
@@ -23,8 +24,17 @@ description: 读取并协调 Hatch 的内部飞书知识库、公开 One Pager �
 - 回答内部产品意图时，优先使用相关飞书正式文档，其次才是会议纪要。
 - 编写对外材料时，优先使用当前 One Pager。除非用户明确要求且适合共享，否则不要暴露内部措辞。
 - 选择市场或赛道时，把 Market Analysis 视为工作假设，而不是已验证事实。涉及实时、精确或高风险的外部结论时，使用一手来源重新验证。
+- 解释 Keith 的判断时，按主题只读取相关 Founder Context 文件，并保留文件中的 `provenance` 与 `creator_approved` 状态。`creator_approved: false` 的内容不能自动作为 Keith 已批准的对外表述。
 - 判断当前实现、发布、authentication、payment、entitlement 或 Runtime 行为时，检查真实产品链路。内容资料不能作为 UAT 或发布证据。
 - 当两个数据源冲突时，分别说明结论、来源和日期，再指出当前任务应以哪个来源为准。
+
+## 处理 Founder Context
+
+- 使用 [references/sources.md](references/sources.md) 中的主题索引，只读取解决当前问题所需的文件，不要默认加载全部资料。
+- 把 `observed` 视为从历史工作记录中观察并整理的表述，不要将其升级为独立验证事实。
+- 把 `inferred` 视为推断或建议，必须明确标注，不能写成 Keith 或 Hatch 的既定立场。
+- `10-gtm-decisions-still-open.md` 只用于识别未决问题。不得用它宣布首发地域、第一 ICP、第一 SKU 或定价已经确定。
+- 不要以 Keith 的名义对外发言或假装本人。可以基于资料总结其已记录的判断，并说明来源边界。
 
 ## 处理飞书资料
 
@@ -40,5 +50,6 @@ description: 读取并协调 Hatch 的内部飞书知识库、公开 One Pager �
 - 解释 Hatch 的产品定位、技术架构、Creator 流程、Customer 流程或商业模式。
 - 准备内部新人培训、产品简报、市场计划、合作伙伴材料或会议资料。
 - 对比内部策略与对外表述。
+- 从 Keith 的创始人视角解释产品判断、质量标准、架构原则和工作方式。
 - 追溯某项 Hatch 决策在何时、何处形成。
 - 识别过时、冲突、敏感或尚未验证的项目结论。

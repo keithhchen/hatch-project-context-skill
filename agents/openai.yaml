@@ -1,4 +1,4 @@
 interface:
   display_name: "Hatch 项目资料"
-  short_description: "读取并协调 Hatch 内部知识库、官网与市场分析"
-  default_prompt: "使用 $hatch-project-context 基于最新 Hatch 项目资料回答产品与市场问题。"
+  short_description: "读取飞书、官网、市场分析与 Keith 创始人语境"
+  default_prompt: "使用 $hatch-project-context 基于实时项目资料和 Keith 创始人语境回答 Hatch 产品与市场问题。"
