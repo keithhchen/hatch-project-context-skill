@@ -3,13 +3,12 @@
 这个仓库同时提供两种入口，正文保持一致：
 
 - OpenAI/Codex：根目录的 `SKILL.md` 和 `agents/openai.yaml`。
-- Anthropic/Claude Code：`.claude-plugin/plugin.json` 和 `skills/hatch-project-context/SKILL.md`。
+- Anthropic Agent Skills：`skills/hatch-project-context/`，这是一个可独立安装的纯 skill 目录，包含 `SKILL.md` 和自己的 `references/`。
 
-Claude Code 插件需要从仓库根目录加载；插件会发现 `skills/hatch-project-context/`，该目录包含自己的 `references/`：
+Anthropic 入口就是独立纯 skill；将 `skills/hatch-project-context/` 目录复制到目标 Agent 的 skills 目录即可。
 
 ```bash
-claude plugin validate .
-claude --plugin-dir .
+python3 scripts/validate_skill.py
 ```
 
 OpenAI/Codex 入口继续使用原来的 `$hatch-project-context` skill。若将仓库作为本地 skill 目录使用，目录名应为 `hatch-project-context`，以便与 `SKILL.md` 的 `name` 对齐。

@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""Validate the OpenAI/Codex and Anthropic skill entry points."""
+"""Validate the OpenAI/Codex and pure Anthropic skill entry points."""
 
 from __future__ import annotations
 
-import json
 import re
 import sys
 from pathlib import Path
@@ -57,14 +56,11 @@ def main() -> int:
     root = Path(__file__).resolve().parents[1]
     openai_skill = root / "SKILL.md"
     anthropic_skill = root / "skills" / "hatch-project-context" / "SKILL.md"
-    manifest_path = root / ".claude-plugin" / "plugin.json"
 
     if not openai_skill.is_file():
         fail(f"missing {openai_skill}")
     if not anthropic_skill.is_file():
         fail(f"missing {anthropic_skill}")
-    if not manifest_path.is_file():
-        fail(f"missing {manifest_path}")
 
     openai_fields, openai_body = validate_metadata(openai_skill, "hatch-project-context")
     anthropic_fields, anthropic_body = validate_metadata(
@@ -120,19 +116,10 @@ def main() -> int:
         ).read_bytes():
             fail(f"reference file has diverged: {relative_path}")
 
-    try:
-        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    except json.JSONDecodeError as error:
-        fail(f"{manifest_path}: invalid JSON ({error})")
-
-    if manifest.get("name") != "hatch-project-context":
-        fail("Claude plugin manifest has the wrong name")
-    if "./skills" not in manifest.get("skills", []):
-        fail("Claude plugin manifest must register ./skills")
     if not (root / "agents" / "openai.yaml").is_file():
         fail("missing agents/openai.yaml")
 
-    print("Skill layout is valid for OpenAI/Codex and Anthropic/Claude Code.")
+    print("Skill layout is valid for OpenAI/Codex and pure Anthropic Agent Skills.")
     return 0
 
 
