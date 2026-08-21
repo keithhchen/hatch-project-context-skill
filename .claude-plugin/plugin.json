@@ -1,0 +1,12 @@
+{
+  "name": "hatch-project-context",
+  "description": "读取并协调 Hatch 的内部飞书知识库、公开 One Pager、市场进入分析与 Keith 创始人语境。",
+  "version": "0.1.0",
+  "author": {
+    "name": "Keith Chen"
+  },
+  "repository": "https://github.com/keithhchen/hatch-project-context-skill",
+  "skills": [
+    "./skills"
+  ]
+}
