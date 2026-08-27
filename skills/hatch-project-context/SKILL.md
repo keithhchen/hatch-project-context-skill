@@ -1,6 +1,6 @@
 ---
 name: hatch-project-context
-description: 读取并协调 Hatch 的内部飞书知识库、公开 One Pager、市场进入分析与 Keith 创始人语境。当用户询问或需要 Hatch 的产品定位、技术架构、Creator 或 Customer 工作流、市场策略、新人培训、内部协作、简报、演示文稿、资料对比，或 Keith 的产品判断时使用。不要用于不依赖 Hatch 业务上下文的通用代码仓库任务。
+description: 读取并协调 Hatch 的内部飞书知识库、公开 One Pager、产品 UI 视觉系统、市场进入分析与 Keith 创始人语境。当用户询问或需要 Hatch 的产品定位、技术架构、Creator 或 Customer 工作流、UI/品牌视觉、市场策略、新人培训、内部协作、简报、演示文稿、资料对比，或 Keith 的产品判断时使用。不要用于不依赖 Hatch 业务上下文的通用代码仓库任务。
 compatibility: 需要网络访问；必须安装并完成认证的 Feishu CLI（命令为 lark-cli）。
 metadata:
   dependency: feishu-cli
@@ -31,13 +31,14 @@ command -v lark-cli >/dev/null 2>&1
 
 1. 阅读 [references/sources.md](references/sources.md)，选择与任务相关的数据源。
 2. 在执行任务时读取数据源的最新内容。不要把复制的片段或先前聊天摘要当作当前权威信息。
-3. 区分不同数据源的职责：
+3. 涉及 Hatch UI、品牌表现、视觉系统、设计 token、字体、动效或 Atmospheric 时，读取 [references/visual-system.md](references/visual-system.md)。将公开 `hatch` 仓库的 `packages/brand` 与 `packages/ui` 视为实现 source of truth；保持视觉定义在 UI scope 内，不要无依据扩展成完整平面品牌手册。
+4. 区分不同数据源的职责：
    - 使用飞书获取内部决策、技术架构、运营背景、使用指南和会议历史。
    - 使用 One Pager 获取已批准的对外定位、商业模式表述和合作伙伴沟通语言。
    - 使用 Market Analysis 获取市场进入假设、赛道选择和 GTM 框架。
    - 使用 Founder Context 获取 Keith 的创始人经历、稳定产品判断、质量标准、架构原则和工作方式。
-4. 根据任务目的、数据源职责和日期处理冲突。明确指出重要冲突，不要静默合并不同结论。
-5. 根据用户要求生成回答或交付物，并链接实际使用的数据源。说明会议纪要和市场结论的证据等级。
+5. 根据任务目的、数据源职责和日期处理冲突。明确指出重要冲突，不要静默合并不同结论。
+6. 根据用户要求生成回答或交付物，并链接实际使用的数据源。说明会议纪要和市场结论的证据等级。
 
 ## 数据源权威性
 
