@@ -32,7 +32,7 @@ command -v lark-cli >/dev/null 2>&1
 1. 阅读 [references/sources.md](references/sources.md)，选择与任务相关的数据源。
 2. 在执行任务时读取数据源的最新内容。不要把复制的片段或先前聊天摘要当作当前权威信息。
 3. 涉及 Hatch UI、品牌表现、视觉系统、设计 token、字体、动效或 Atmospheric 时，读取 [references/visual-system.md](references/visual-system.md)。将公开 `hatch` 仓库的 `packages/brand` 与 `packages/ui` 视为实现 source of truth；保持视觉定义在 UI scope 内，不要无依据扩展成完整平面品牌手册。
-4. 涉及 Creator Private Model、Fine-Tuning、model asset、training dataset、LoRA、merged model、Creator ownership 或 Hatch value capture 时，读取 [references/creator-private-model.md](references/creator-private-model.md)。将其作为产品和商业设计参考，不把文档中的方案自动当作当前已实现能力。
+4. 涉及 Creator Private Model、Fine-Tuning、model asset、training dataset、LoRA、merged model、Creator ownership 或 Hatch value capture 时，读取 [references/creator-private-model.md](references/creator-private-model.md)；需要英文资料或英文输出时，同时读取 [references/creator-private-model-tuning.md](references/creator-private-model-tuning.md)。将这些文档作为产品和商业设计参考，不把其中的方案自动当作当前已实现能力。
 5. 区分不同数据源的职责：
    - 使用飞书获取内部决策、技术架构、运营背景、使用指南和会议历史。
    - 使用 One Pager 获取已批准的对外定位、商业模式表述和合作伙伴沟通语言。
